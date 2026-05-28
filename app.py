@@ -11,7 +11,8 @@ if "GEMINI_API_KEY" not in st.secrets:
     st.stop()
 
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
-PDF_PATH = "/Users/aaydexterous/Desktop/swecha/chatbot1/GITA Material/bhagavad-gita-in-english-source-file.pdf"
+# CHANGE THIS LINE:
+PDF_PATH = "GITA Material/bhagavad-gita-in-english-source-file.pdf"
 
 # 2. Upload to Gemini Files API (Runs only ONCE per session)
 # We store the Google Cloud file reference in session_state
